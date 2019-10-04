@@ -2,12 +2,11 @@
 import React from 'react'
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native'
 
-class Home extends React.Component {
+class Settings extends React.Component {
   render() {
-    console.log('this here', this)
     return (
       <View style={styles.container}>
-        <Text>Home Screen.</Text>
+        <Text>Settings Screen.</Text>
         <TouchableOpacity
           style={styles.drawerButton}
           onPress={() => this.props.navigation.openDrawer()}>
@@ -35,4 +34,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default Home
+export default Settings
