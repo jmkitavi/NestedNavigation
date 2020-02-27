@@ -14,6 +14,12 @@ class Settings extends React.Component {
           <Text>Open Drawer</Text>
         </TouchableOpacity>
 
+        <TouchableOpacity
+          style={styles.loginButton} 
+          onPress={() => this.props.navigation.navigate('ProfileSettings')}>
+          <Text>Profile Settings</Text>
+        </TouchableOpacity>
+
       </View>
     )
   }
